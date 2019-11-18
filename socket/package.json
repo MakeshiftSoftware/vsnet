@@ -1,0 +1,24 @@
+{
+  "name": "@vsnet/socket",
+  "version": "0.0.1",
+  "description": "Socket server",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/makeshiftsoftware/vsnet",
+  "bugs": "https://github.com/makeshiftsoftware/vsnet/issues",
+  "repository": "https://github.com/makeshiftsoftware/vsnet/tree/master/socket",
+  "contributors": [
+    {
+      "name": "Arya Mohades",
+      "email": "aryamohades@gmail.com"
+    }
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint --config ../eslint.json lib",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  }
+}

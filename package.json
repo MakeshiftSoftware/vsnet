@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "format": "prettier --write './*/{src,lib,test}/**/*.js'",
+    "lint": "pnpm recursive run lint",
+    "test": "pnpm recursive run test"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
