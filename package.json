@@ -12,7 +12,9 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
+    "clean": "rm -rf node_modules && rm -f pnpm-lock.yaml && pnpm prune && pnpm i",
     "format": "prettier --write './*/{src,lib,test}/**/*.js'",
+    "install": "pnpm recursive install",
     "lint": "pnpm recursive run lint",
     "test": "pnpm recursive run test"
   },
